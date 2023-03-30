@@ -1,0 +1,31 @@
+.btn{
+    margin: 120px;
+    display: block;
+    position: relative;
+    padding: 10px;
+    background-color: #dc3545;
+    font: normal 400 20px Arial;
+    color: #fff;
+    border-radius: .3rem;
+    border: 1px solid #dc3545;
+}
+
+.popover-wrapper{
+    position: absolute;
+    max-width: 276px;
+    border: 1px solid rgba(0, 0, 0, 0.104);
+    border-radius: .3rem;
+}
+
+.popover-header{
+    background-color: #f7f7f7;
+    font: normal 250 15px Arial;
+    padding: 8px 12px;
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.059);
+}
+
+.popover-body{
+    font: normal 200 13px Arial;
+    padding: 8px 12px;
+}
