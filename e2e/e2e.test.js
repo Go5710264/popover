@@ -35,11 +35,9 @@ describe('popover function test', () => {
 
   test('the appearance of a popover', async () => {
     await page.goto(baseUrl);
-    await page.waitForSelector('btn'); // дожаться появления кнопки
-
-    const button = await page.$('.btn'); // получить доступ к кнопке
-
-    await page.click(button); // клик по кнопке
-    await page.waitForSelector('popover-wrapper'); // дождаться появления поповера
+    await page.waitForSelector('.btn'); // дожаться появления кнопки
+    await page.click('.btn'); // клик по кнопке
+    await page.waitForSelector('.popover-wrapper'); // дождаться появления поповера
+    await page.click('.btn'); // клик по кнопке
   });
 });
