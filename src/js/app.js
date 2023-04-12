@@ -5,14 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const popoverFactory = new Popover();
 
   button.addEventListener('click', () => {
-    if(document.querySelector('.popover-wrapper')) {
+    if (document.querySelector('.popover-wrapper')) {
       popoverFactory.removePopover();
       return false;
-    };
-    
-    popoverFactory.popoverСreation(); 
-    popoverFactory.getCoordButton(); 
-    popoverFactory.showPopover(); 
-    popoverFactory.getCoordPopover();
-  })
+    }
+    popoverFactory.popoverСreation();
+    popoverFactory.getCoordButton();
+    popoverFactory.showPopover();
+    return popoverFactory.getCoordPopover();
+  });
 });

@@ -1,7 +1,7 @@
 import puppetteer from 'puppeteer';
 import { fork } from 'child_process';
 
-jest.setTimeout(30000); 
+jest.setTimeout(30000);
 
 describe('popover function test', () => {
   let browser = null;
@@ -21,9 +21,9 @@ describe('popover function test', () => {
     });
 
     browser = await puppetteer.launch({
-      headless: false, // show gui
+      headless: false,
       slowMo: 250,
-      devtools: true, // show devTools
+      devtools: true,
     });
     page = await browser.newPage();
   });
@@ -35,9 +35,9 @@ describe('popover function test', () => {
 
   test('the appearance of a popover', async () => {
     await page.goto(baseUrl);
-    await page.waitForSelector('.btn'); 
-    await page.click('.btn'); 
-    await page.waitForSelector('.popover-wrapper'); 
-    await page.click('.btn'); 
+    await page.waitForSelector('.btn');
+    await page.click('.btn');
+    await page.waitForSelector('.popover-wrapper');
+    await page.click('.btn');
   });
 });
