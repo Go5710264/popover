@@ -1,7 +1,7 @@
 import puppetteer from 'puppeteer';
 import { fork } from 'child_process';
 
-jest.setTimeout(30000); // default puppeteer timeout
+jest.setTimeout(30000); 
 
 describe('popover function test', () => {
   let browser = null;
@@ -35,9 +35,9 @@ describe('popover function test', () => {
 
   test('the appearance of a popover', async () => {
     await page.goto(baseUrl);
-    await page.waitForSelector('.btn'); // дожаться появления кнопки
-    await page.click('.btn'); // клик по кнопке
-    await page.waitForSelector('.popover-wrapper'); // дождаться появления поповера
-    await page.click('.btn'); // клик по кнопке
+    await page.waitForSelector('.btn'); 
+    await page.click('.btn'); 
+    await page.waitForSelector('.popover-wrapper'); 
+    await page.click('.btn'); 
   });
 });

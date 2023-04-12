@@ -10,7 +10,7 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: '[name][ext]', // переместить в корневую папку
+    assetModuleFilename: '[name][ext]', 
   },
   module: {
     rules: [
@@ -37,8 +37,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|cur|gif)$/i,
-        type: 'asset/resource', // т.е. вышележащие файлы нужно поместить в папку ресурсы asset
-      // Привило загрузки asset/resource работает в паре с параметром output assetModuleFilename
+        type: 'asset/resource',
       },
     ],
   },

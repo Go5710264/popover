@@ -6,7 +6,6 @@ export default class Popover {
     }
 
     popoverСreation() {
-        // создание контента для поповера
         this.popover = document.createElement('div');
         this.popover.classList.add('popover-wrapper');
 
@@ -18,7 +17,6 @@ export default class Popover {
         bodyPopover.classList.add('popover-body');
         bodyPopover.textContent ="And here's some amazing content. It's very engaging. Right?";
 
-        // добавление контента в поповер
         this.popover.appendChild(titlePopover);
         this.popover.appendChild(bodyPopover)
     }
